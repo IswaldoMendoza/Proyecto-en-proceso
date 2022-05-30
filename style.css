@@ -1,0 +1,764 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/botones-de-playstation-8920.jpg?s=large) ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+    color: grey;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+	.capaDeOpacidad{	
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(124, 124, 124, 0.267);
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+
+	/*Estilos para el encabezado*/
+
+	.header{
+		width: 100%;
+		height: 75px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgb(92, 92, 92);
+		transition: all 0.3s ease;
+		border-bottom: 3px double black;
+	}
+
+	.header:hover {
+		background-color: rgb(255, 81, 0);
+		border-bottom: 5px white;
+		border-bottom-style: ridge;
+	}
+
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+
+	.container .btn-menu label{
+		position: sticky;
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+	.logo h1{
+		position: sticky;
+		color: #fff;
+		font-weight: 400;
+		font-size: 30px;
+		margin-left: 10px;
+	}
+
+	.container .menu{
+		position: sticky;
+		float: right;
+		line-height: 100px;
+	}
+
+	.container .menu a{
+		position: sticky;
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 3px solid transparent;
+		border-left: 3px solid transparent;
+		border-right: 3px solid #c7c7c7;
+		border-top: 3px solid #c7c7c7;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	.container .menu a:hover{
+		position: sticky;
+		border-bottom: 3px solid #c7c7c7;
+		border-left: 3px solid #c7c7c7;
+		border-right: 3px solid transparent;
+		border-top: 3px solid transparent;
+		padding-bottom: 5px;	
+	}
+
+	.A1:hover{
+		background-color: #04e70f;
+	}
+
+	.A2:hover{
+		background-color: #ec1010;
+	}
+
+	.A3:hover{
+		background-color: #04b2e7;
+	}
+
+	.A4:hover{
+		background-color: #e704c9;
+	}
+
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+
+	#btn-menu{
+		display: none;
+		position: sticky;
+	}
+
+	.container-menu{
+		position: sticky;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100px;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #110D0D;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		padding-left: 40px;
+		color: #ffffff;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+
+	.n1:hover{
+		border-left: 35px solid #04e70f;
+		background: #ffffffb7;
+		color: black;
+	}
+
+	.n2:hover{
+		border-left: 35px solid #ec1010;
+		background: #ffffffb7;
+		color: black;
+	}
+
+	.n3:hover{
+		border-left: 35px solid #04b2e7;
+		background: #ffffffb7;
+		color: black;
+	}
+
+	.n4:hover{
+		border-left: 35px solid #e704c9;
+		background: #ffffffb7;
+		color: black;
+	}
+
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: rgb(255, 136, 0);
+		cursor: pointer;
+		font-size: 25px;
+	}
+
+	/*Fin de Menù lateral*/
+
+	/* Comtenido Principal */
+
+	.titulo {
+		color: white;
+		font-size: 40px ;
+		text-align: center;
+		border-bottom-style: double;
+		border-top-style: double;
+		border-color: antiquewhite;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		letter-spacing: 3px;
+	  }
+	  
+	  .card {
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 10px;
+		text-align: center;
+		width: 250px;
+		height: 380px;
+		margin: 0 auto;
+		margin-left: 5px;
+		margin-right: 5px;
+		display: inline-block;
+		box-sizing: 250px;
+	  }
+	  
+	  .card img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	  }
+	  
+	  .contenedor-tarjetas {
+		margin: 35px auto;
+		width: 789px;
+	  }
+	
+	/* inicio del grid del id #grids de la linea 42 del hatml index.html y en los html de tiendas*/
+	
+	  #grids {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	  }
+	  
+	  /* fin del grid del id #grids */
+
+	
+		
+	  .parrafo-inferior {
+		color: white;
+		border-bottom-style: double;
+		border-top-style: double;
+		border-color: antiquewhite;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		font-size: 20px ;
+		text-align: center;
+		line-height: 80px;
+		letter-spacing: 3px;
+	  }
+	
+	  .listado {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		color: white;
+		text-align: center;
+		padding-left: 20px;
+		text-decoration: none;    
+		list-style: none;
+		font-size: x-large;
+		letter-spacing: 1px;
+	  }
+	
+	  .hover:hover {
+		color: coral;
+		font-size: 35px;
+	  }
+
+/* fin del contenido principal */
+
+/* Comienzo de los estilos de la pagina contacto */
+
+.form-register {
+    width: 400px;
+    background: #A81CC4;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    text-align: center;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #80DFB3;
+    border: none;
+    padding: 12px;
+    color: #24303c;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  /* Fin de los estilos de la pagina Contacto */
+
+
+/* inicio del footer */
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    font-size: medium;
+    background-color: rgba(138, 134, 132, 0.329);
+    background-attachment: contain;
+    color: lightblue;
+    text-decoration-line: none;
+    list-style: none;
+	transition: all 1.5s ease;
+	border-top: 3px solid white;
+}
+
+.footer:hover {
+	border-bottom: 3px solid white;
+	border-top: 3px solid transparent;
+	background-color: rgba(255, 81, 0, 0.76);
+}
+
+.caja {
+    text-decoration-line: none;
+    list-style: none;
+    max-width: 80%;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+#cajaDeRedes{
+  padding-left: 50px;
+}
+
+.redes {
+    align-items: right;
+    width: 50px;
+    height: 50px;
+  }
+
+  .copyright {
+	  display: flex;
+	  flex-direction: row;
+      justify-content: center;
+      color: white;
+	  padding-top: 20px;
+	}
+
+	@media (max-width: 321px) {
+
+		.capaDeOpacidad {
+			display: none;
+		}
+
+		.header{
+			width: 100%;
+			height: 87px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgb(255, 81, 0);
+			border-bottom: 5px white;
+			border-bottom-style: ridge;
+		}
+	
+		.container{
+			width: 90%;
+			max-width: 1200px;
+			margin: auto;
+		}
+	
+		.container .btn-menu, .logo{
+			float: left;
+			line-height:100px;
+		}
+	
+		.container .btn-menu label{
+			position: sticky;
+			color: #fff;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		
+		.logo h1{
+			display: none;
+		}
+	
+		.container .menu{
+			position: sticky;
+			float: right;
+			line-height: 100px;
+		}
+	
+		.container .menu a{
+			position: sticky;
+			display: inline-block;
+			padding-right: 35px;
+			line-height: normal;
+			text-decoration: none;
+			color: #fff;
+			border-bottom: 3px solid transparent;
+			border-left: 3px solid transparent;
+			border-right: 3px solid #c7c7c7;
+			border-top: 3px solid #c7c7c7;
+			font-size: 25px;
+			margin-right: 5px;
+			letter-spacing: 2px;
+		}
+	
+		.container .menu a:hover{
+			position: sticky;
+			border-bottom: 3px solid #c7c7c7;
+			border-left: 3px solid #c7c7c7;
+			border-right: 3px solid transparent;
+			border-top: 3px solid transparent;
+			padding-bottom: 5px;	
+		}
+	
+		.A1{
+			background-color: #04e70f93;
+		}
+	
+		.A2{
+			background-color: #ec101096;
+		}
+	
+		.A3{
+			background-color: #04b2e796;
+		}
+	
+		.A4{
+			background-color: #e704c994;
+		}
+	
+		/*Fin de Estilos para el encabezado*/
+	
+		/*Menù lateral*/
+	
+		#btn-menu{
+			display: none;
+			position: sticky;
+		}
+	
+		.container-menu{
+			position: sticky;
+			background: rgba(26, 18, 18, 0.5);
+			width: 100%;
+			height: 100px;
+			top: 0;left: 0;
+			transition: all 500ms ease;
+			opacity: 0;
+			visibility: hidden;
+		}
+	
+		#btn-menu:checked ~ .container-menu{
+			opacity: 1;
+			visibility: visible;
+		}
+	
+		.cont-menu{
+			width: 100%;
+			max-width: 250px;
+			font-size: larger;
+			letter-spacing: 2px;
+			background: #110D0D;
+			height: 100vh;
+			position: relative;
+			transition: all 500ms ease;
+			transform: translateX(-100%);
+		}
+	
+		#btn-menu:checked ~ .container-menu .cont-menu{
+			transform: translateX(0%);
+		}
+	
+		.cont-menu nav{
+			transform: translateY(15%);
+		}
+	
+		.cont-menu nav a{
+			display: block;
+			text-decoration: none;
+			padding: 20px;
+			padding-left: 40px;
+			color: #ffffff;
+		}
+	
+		.n1{
+			border-left: 35px solid #04e70f;
+		}
+	
+		.n2{
+			border-left: 35px solid #ec1010;
+		}
+	
+		.n3{
+			border-left: 35px solid #04b2e7;
+		}
+	
+		.n4{
+			border-left: 35px solid #e704c9;
+		}
+	
+		.cont-menu label{
+			position: absolute;
+			right: 5px;
+			top: 10px;
+			color: rgb(255, 136, 0);
+			cursor: pointer;
+			font-size: 25px;
+		}
+		
+	
+		/*Fin de Menù lateral*/
+	
+		/* Comtenido Principal */
+
+	
+		.titulo {
+			width: 677px;
+			color: rgb(252, 42, 42);
+			font-size: 40px ;
+			text-align: center;
+			border-bottom-style: double;
+			border-top-style: double;
+			border-color: antiquewhite;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			letter-spacing: 3px;
+		  }
+		  
+		  .card {
+			background-color: transparent;
+			border-radius: none;
+			width: 280px;
+			height: 380px;
+			margin: 0 auto;
+			margin-left: none;
+			margin-right: none;
+			display: block;
+			box-sizing: 100px;
+			padding-top: 25px;
+			padding-bottom: 25px
+		  }
+		  
+		  .card img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		  }
+		  
+		  .contenedor-tarjetas {
+			width: 675px;
+		  }
+
+		  /* Imidio de grids */
+	  
+		  .media, #grids{
+			display: block;
+			justify-items: center;
+		  }
+		  
+		  /* fin del grid del id #grids */
+	
+		
+			
+		  .parrafo-inferior {
+			width: 677px;
+			color: rgb(255, 255, 255);
+			font-size: 30px ;
+			text-align: center;
+			border-bottom-style: double;
+			border-top-style: double;
+			border-color: antiquewhite;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			letter-spacing: 3px;
+		  }
+		
+		  .listado {
+			width: 677px;
+			color: rgb(15, 142, 242);
+			font-size: 20px ;
+			text-align: center;
+			border-bottom-style: double;
+			border-top-style: double;
+			border-color: antiquewhite;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			letter-spacing: 3px;
+		  }
+	
+	/* fin del contenido principal */
+	
+	/* Inicio de estilos de pagina contacto */
+
+	.form-register {
+		width: 200px;
+		background: #A81CC4;
+		padding: 10px;
+		margin: auto;
+		margin-top: 50px;
+		border-radius: 4px;
+		font-family: 'calibri';
+		color: white;
+		text-align: center;
+		box-shadow: 7px 13px 37px #000;
+		padding-bottom: 15px;
+	  }
+	  
+	  .form-register h4 {
+		font-size: 15px;
+		margin-bottom: 10px;
+		padding-bottom: 30px;
+	  }
+	  
+	  .controls {
+		width: 100%;
+		background: #24303c;
+		padding: 10px;
+		border-radius: 4px;
+		margin-bottom: 16px;
+		border: 1px solid #1f53c5;
+		font-family: 'calibri';
+		font-size: 18px;
+		color: white;
+	  }
+	  
+	  .form-register p {
+		height: 40px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 40px;
+	  }
+	  
+	  .form-register a {
+		color: white;
+		text-decoration: none;
+	  }
+	  
+	  .form-register a:hover {
+		color: white;
+		text-decoration: underline;
+	  }
+	  
+	  .form-register .botons {
+		width: 50%;
+		background: #80DFB3;
+		border: none;
+		padding: 5px;
+		color: #24303c;
+		margin: 50px 0;
+		font-size: 16px; 
+	  } 
+
+	  /* Fin de estilos de pagina contacto */
+
+	/* inicio del footer */
+	
+	.footer {
+		width: 677px;
+		padding-top: 80px;
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: space-around;
+		font-style: italic;
+		font-size: medium;
+		background-color: rgba(138, 134, 132, 0.329);
+		background-attachment: contain;
+		color: lightblue;
+		text-decoration-line: none;
+		list-style: none;
+		border-top: 3px solid white;
+	}
+	
+	.caja {
+		text-decoration-line: none;
+		list-style: none;
+		max-width: 80%;
+		text-decoration: none;
+		list-style: none;
+	}
+	
+	#cajaDeRedes{
+	  padding-left: 50px;
+	}
+	
+	.redes {
+		align-items: right;
+		display: grid;
+		width: 40px;
+		height: 40px;
+	  }
+	
+	.copyright {
+		width: 677px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		color: white;
+		padding-top: 20px;
+	  }
+  }

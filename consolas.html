@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/pestaña.ico" />
+ 
+
+    <title>Checkpoint</title>
+</head>
+
+<body>
+
+<!--Comienzo del Header con menu desplegable-->
+
+	<header class="header">
+
+		<div class="container">
+		
+			<div class="btn-menu">
+				
+				<label for="btn-menu"> <img src="imagenes/48x48.png" alt=""> </label>
+
+			</div>
+
+			<div class="logo">
+				<h1>Checkpoint</h1>
+			</div>
+			
+			<nav class="menu">
+				<a class="A1" href="index.html">Inicio</a>
+				<a class="A2" href="inicioSesion.html">Blog</a>
+				<a class="A3" href="inicioSesion.html">Twitch</a>
+				<a class="A4" href="inicioSesion.html">Discord</a>
+			</nav>
+
+		</div>
+
+	</header>
+<!--Fin del Header-->
+
+<!-- Capa para hacer un fondo opaco -->
+<div class="capaDeOpacidad"></div>
+
+<!-- Comienzo del menu fijo -->
+	<input type="checkbox" id="btn-menu">
+
+	<div class="container-menu">
+
+		<div class="cont-menu">
+			<nav>
+				<ul>
+					<li><a class="n1" href="consolas.html">CONSOLAS</a></li>
+					<li><a class="n2" href="clasicos.html">CLASICOS</a></li>
+					<li><a class="n3" href="tiendita.html">TIENDITA</a></li>
+					<li><a class="n4" href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		
+			<label for="btn-menu">X</label>
+			
+		</div>
+
+	</div>
+<!-- Fin del menu fijo -->
+<div class="container">
+  <main>    
+      <h1 class="titulo text-bg-dark">Historia de consolas</h1>
+    <div class="contenedor-tarjetas">
+      <div class="container">
+
+        <div class="media">
+
+          <div id="grids">          
+            <div class="card">
+              <img src="data:image/jpeg;base64,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" alt="imagen1" id="imagen1"/>
+              <h3>Primera Generacion</h3>
+              <h5>Decada de 1960</h5>
+            </div>
+              
+            <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnizT0JQW0v1OFamMqrY98cY1fIeZXvpjXHQ&usqp=CAU" alt="imagen2" id="imagen2"/>
+              <h3>Segunda Generacion</h3>
+              <h5>Decada de 1970</h5>
+            </div>
+            
+            <div class="card">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Nintendo-Entertainment-System-NES-Console-FL.jpg" alt="imagen3" id="imagen3"/>
+              <h3>Tercera Generacion</h3>
+              <h5>Decada de 1980</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-tarjetas">
+      <div class="container">
+
+        <div class="media">
+
+          <div id="grids">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg" alt="imagen1" id="imagen1"/>
+              <h3>Cuarta Generacion</h3>
+              <h5>Naciendo en 1987</h5>
+            </div>
+            <div class="card">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_602449-MLA48708214419_122021-V.jpg" alt="imagen2" id="imagen2"/>
+              <h3>Quinta Generacion</h3>
+              <h5>Era de los 32/64 bits</h5>
+            </div>
+            <div class="card">
+              <img src="https://static.wikia.nocookie.net/nintendo/images/7/77/Nintendo_GameCUbe_Consola.jpg/revision/latest?cb=20130711182832&path-prefix=es" alt="imagen3" id="imagen3"/>
+              <h3>Sexta Generacion</h3>
+              <h5>Nuevo Milenio</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contenedor-tarjetas">
+      <div class="container">
+
+        <div class="media">
+
+          <div id="grids">
+            <div class="card">
+              <img src="https://i.blogs.es/6e6875/ps3_negra_def-thumb/450_1000.jpg" alt="imagen1" id="imagen1"/>
+              <h3>Septima Generacion</h3>
+              <h5>Entrando en el 2005</h5>
+            </div>
+            <div class="card">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_799936-MLA32045378999_092019-O.jpg" alt="imagen2" id="imagen2"/>
+              <h3>Octava Generacion</h3>
+              <h5>Decada del 2010</h5>
+            </div>
+            <div class="card">
+              <img src="https://live.staticflickr.com/65535/49996224731_b7bee3708f_k.jpg" alt="imagen3" id="imagen3"/>
+              <h3>Novena Generacion</h3>
+              <h5>Desde el 2017 a la actualidad</h5>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  </main>
+</div>
+ <!-- Comienzo del footer -->
+
+ <footer>
+  <div class="container">
+  <div class="footer bg-dark">
+
+      <div class="medias">
+
+         
+        <div class="caja">
+          <h2>Empresa</h2>
+          <ul>
+              <li><a href="#" style="text-decoration: none;">Sobre Nosotros</a></li>
+              <li><a href="#" style="text-decoration: none;">Contactanos</a></li>
+              <li><a href="#" style="text-decoration: none;">Trabaja con nosotros</a></li>
+          </ul>
+      </div>
+
+      <div class="caja">
+          <h2>Comprar</h2>
+          <ul>
+              <li><a href="#" style="text-decoration: none;">Como Comprar</a></li>
+              <li><a href="#" style="text-decoration: none;">Lista de Juegos</a></li>
+              <li><a href="#" style="text-decoration: none;">Colecciones</a></li>
+              <li><a href="#" style="text-decoration: none;">Categorias</a></li>
+          </ul>
+      </div>
+
+      <div class="caja">
+          <h2>Ayuda</h2>
+          <ul>
+              <li><a href="#" style="text-decoration: none ;">FAQ</a></li>
+              <li><a href="#" style="text-decoration: none;">Preguntas Frecuentes</a></li>
+              <li><a href="#" style="text-decoration: none;">¿Como comprar?</a></li>
+          </ul>
+      </div>
+
+      <div class="caja">
+          <h2>Comunidad</h2>
+          <ul>
+              <li><a href="#" style="text-decoration: none;">Blog</a></li>
+              <li><a href="#" style="text-decoration: none;">Twitch</a></li>
+              <li><a href="#" style="text-decoration: none;">Discord</a></li>
+          </ul>
+      </div>
+
+      </div>
+
+        <div class="caja" id="cajaDeRedes">
+            <div>
+                <ul>
+                    <img class="redes" src="https://www.msm.gov.ar/wp-content/uploads/2020/05/new-instagram-logo-png-transparent-light.png" alt="instagram">
+                    <img class="redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="facebok">
+                    <img class="redes" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c540.png" alt="twitch">
+                    <img class="redes" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="twiter">
+                </ul>
+            </div>
+        </div>
+
+    
+  </div>
+    <div class="copyright">
+      <p>Todos los derechos reservados © 2022 | <i>Iswaldo Mendoza</i></p>
+    </div>
+  </div>
+  </footer>
+  <!-- fin del footer -->
+
+</body>
+</html>
